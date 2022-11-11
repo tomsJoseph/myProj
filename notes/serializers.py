@@ -5,7 +5,7 @@ from .models import *
 class NoteTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = NoteType
-        fields = ['id', 'tname', 'created']
+        fields = ['id', 'tname', 'created', 'added_by']
 
 
 class WDaySerializer(serializers.ModelSerializer):
